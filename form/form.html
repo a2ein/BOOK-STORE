@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Fonts Pre Connect -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts Links (Roboto 400, 500 and 700 included) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+
+  <!-- CSS Files Links -->
+  <link rel="stylesheet" href="./styles.css">
+
+  <!-- Title -->
+  <title>BUYER FORM</title>
+</head>
+<body>
+
+<style>
+body{
+    background-color: rgba(129, 129, 129, 0.212);
+    color: #757474;
+
+    font-family: Impact, 'Arial Narrow Bold';
+
+
+font-size: medium;
+
+}
+fieldset{
+
+font-family: Impact, 'Arial Narrow Bold';
+    text-align: center;
+}
+
+header{
+color: rgba(0, 0, 0, 0.788);
+font-weight: bolder;
+    text-align: center;
+}
+
+</style>
+
+  <header>
+
+    BUYER FORM
+  </header>
+
+  <br> <br>
+<form name="buyer" method="post" netlify netlify-honeypot="bot-field">
+<fieldset>
+
+<legend>
+
+FILL THIS FORM
+</legend>
+
+
+<label style="display: block;visibility:hidden;">
+
+Please leave it if you are  human :<input type="text" name="bot-field">
+
+</label>
+
+
+<label> NAME: <input type="text" name="name" placeholder=" * input your name" required> </label> <br>
+<hr>
+
+<label> PHONE NO: <input type="number" name="mob" placeholder=" * input your mobile number" required> </label> <br>
+<hr>
+<label> ADDRESS: <input type="text" name="add" placeholder=" * What's your address" required> </label>  <br>
+<hr>
+<label> NUMBER OF BOOKS: <input type="text" name="quantity" placeholder=" * Quantity/es" required> </label> <br>
+<hr>
+
+
+
+
+
+
+
+<!--conditions-->
+<label style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> 
+<input required  name="declaration" type="checkbox"> * I declared that provided informations are 100% correct.I accept all the rules and regulations of BOOK-HUNT </label>
+
+
+</fieldset>
+<button style="text-align: left;"  type="submit">SUBMIT</button>
+
+
+
+</form>
+
+  <noscript>Your browser don't support JavaScript!</noscript>
+  <script src="./scripts.js"></script>
+</body>
+</html>
